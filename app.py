@@ -19,9 +19,7 @@ def predict_image(img_path, model):
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0)
     img_array /= 255.0  # Normalize the image
-    prediction = model.signatures['serving_default'](tf.constant(img_array))
-
-    print("Output keys:", prediction.keys())
+    prediction = model.predict(img_array)
 
     return prediction
 
@@ -69,9 +67,11 @@ def render():
 
         index = ['cables', 'case', 'cpu', 'gpu', 'hdd', 'headset', 'keyboard', 'microphone', 'monitor', 'motherboard',
                  'mouse', 'ram', 'speakers', 'webcam']
-        curr["prediction_text"] = "The predicted item is: " + str(index[np.argmax(preds)])
-        print(curr["prediction_text"])
-        curr["description"] = description[str(index[np.argmax(preds)])]
+        predicted_class_index = np.argmax(preds[0])  # preds[0] is the actual prediction vector
+        label = index[predicted_class_index]         # label from index mapping
+        curr["prediction_text"] = "The predicted item is: " + str(label)
+        curr["description"] = description[str(label)]  # convert label to string if needed
+
 
         return render_template('prediction_page.html', text=curr["prediction_text"],
                                image=url_for('static', filename='uploads/' + curr["file"]),
