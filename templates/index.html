@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>eStartup Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eStartup
+  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+
+        .main-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;  /* Set the container height to full viewport height */
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            overflow-y: auto;  /* Allow vertical scrolling if content overflows */
+        }
+        .iframe-container {
+            flex: 1;
+            display: none;
+            padding: 20px;
+        }
+        .iframe-container iframe {
+            border: none;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div id="logo">
+        <h1><a href="index.html"><span>TechParts</span>Vision</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about-us">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">predict</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <div class="main-container">
+    <div class="main-content">
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Welcome to TechParts Vision</h1>
+      <h2>Transfer learning leveraged tech detection</h2>
+      <img src= "{{ url_for('static', filename='parts.png') }}" alt="Hero Imgs" data-aos="zoom-in" data-aos-delay="100">
+      <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+      <div class="btns">
+        <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
+        <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
+        <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <header style="color: rgba(0,0,0); text-align: center; padding: 1em 0;">
+
+        <h1 style="margin: 0; font-size: 2.5em;">Tech Parts</h1>
+    </header>
+
+    <section class="prism-div">
+    <body class="prism-body">
+       <div class="prism-container">
+        <div class="prism">
+            <div class="hexagon" id="hex1"><img src="https://www.shutterstock.com/image-vector/computer-case-front-rear-side-600nw-144192091.jpg" alt="Image 1"></div>
+
+            <div class="hexagon" id="hex2"><img src="https://www.hellotech.com/blog/wp-content/uploads/2020/02/what-is-a-gpu-1280x720.jpg" alt="Image 2"></div>
+            <div class="hexagon" id="hex3"><img src="https://5.imimg.com/data5/YU/PV/MY-61397565/computer-mouse.jpg" alt="Image 3"></div>
+            <div class="hexagon" id="hex4"><img src="https://m.media-amazon.com/images/I/71pHnBCAqmL._AC_UF1000,1000_QL80_.jpg" alt="Image 4"></div>
+            <div class="hexagon" id="hex5"><img src="https://media.croma.com/image/upload/v1674054682/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/247113_0_fuvots.png" alt="Image 5"></div>
+
+          <div class="hexagon" id="hex6"><img src="https://www.endesa.com/content/dam/endesa-com/endesaclientes/blog/imagenes/AM_Mantener_Cables_.jpg" alt="Image 6"></div>
+        </div>
+    </div>
+    </body>
+    </section>
+    <header style="color: rgba(0,0,0); text-align: center; padding: 1em 0;">
+        <h1 style="margin: 0; font-size: 2.5em;">About our Vision</h1>
+    </header>
+      <div class="about-section">
+    <div class="about-container">
+        <img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/06/16031110/Deep-learning.png" alt="Image 1" class="about-image">
+        <h2>Power of Deep Learning</h2>
+        <p>We have built a sequential-based convolutional neural network (CNN) using TensorFlow and Keras. The Sequential model is ideal for building simple and straightforward neural network architectures. Our model consists of multiple convolutional layers interspersed with batch normalization and activation layers, followed by max-pooling layers to reduce the spatial dimensions of the data. This is capped with a dense layer for the final classification. By integrating data augmentation techniques, our model is designed to enhance the robustness and accuracy of the classification task for computer hardware parts.</p>
+    </div>
+    <div class="about-container">
+        <img src="{{ url_for('static', filename='Tl.png') }}" alt="Image 2" class="about-image">
+        <h2>Transfer Learning</h2>
+        <p>We utilized transfer learning to enhance the accuracy and efficiency of our image classification model. By leveraging a pre-trained convolutional neural network (such as VGG16, ResNet, or Inception) and fine-tuning it on our specific dataset of computer hardware parts, we capitalized on the robust feature extraction capabilities of the pre-trained model. This allowed us to achieve high performance with fewer training epochs and reduced computational resources.</p>
+
+    </div>
+    <div class="about-container">
+        <img src="https://production-media.paperswithcode.com/method_collections/cnn.jpeg" alt="Image 3" class="about-image">
+         <h2>Components Categorization</h2>
+            <p>Our model was trained to categorize images of the following 14 computer hardware components:</p>
+            <ul>
+                <li>Webcam</li>
+                <li>Cables</li>
+                <li>Case</li>
+                <li>CPU</li>
+                <li>GPU</li>
+                <li>HDD</li>
+                <li>Headset</li>
+                <li>Keyboard</li>
+                <li>Microphone</li>
+                <li>Monitor</li>
+                <li>Motherboard</li>
+                <li>Mouse</li>
+                <li>RAM</li>
+                <li>Speakers</li>
+            </ul>
+    </div>
+</div>
+<!-- End About Us Section -->
+    <!-- prediction --->
+
+<form id="upload-form" method="POST" enctype="multipart/form-data">
+    <h1> want to check your images? upload here!</h1>
+    <br>
+    <input type="file" name="image" required>
+    <input type="submit" value="Upload" onclick="event.preventDefault(); showTechPartDetail() ;">
+    <br>
+    <p> we are sorry, if the prediction goes wrong, try with compactable version of tensorflow==2.15.0</p>
+
+</form>
+
+<br>
+
+    <!-- ======= Video Section ======= -->
+    <section id="video" class="text-center">
+      <h2> want to see how we made everything!? click the video icon below!</h2>
+      <div class="overlay">
+
+        <div class="container-fluid container-full" data-aos="zoom-in">
+
+          <div class="row">
+            <a href="https://vitapacin-my.sharepoint.com/:v:/g/personal/kowshik_22bce9556_vitapstudent_ac_in/Ef3AmwMXiQZNu2fK-iNm1c4BcC77mJ2tRjCON_-WhX1GKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=vevLJx" class="glightbox play-btn"></a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Video Section -->
+
+     <!-- ======= Team Section ======= -->
+<section id="team" class="team-section text-center">
+  <div class="team-container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>Team Members</h2>
+      <p class="separator"></p>
+
+    </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="team-block">
+          <div class="team-image">
+            <img src="static/img.png" class="img-responsive rounded-circle" alt="Kowshik">
+          </div>
+          <div class="team-content">
+            <h4>KOWSHIK</h4>
+            <p>g-mail: kowshik.22bce9556@vitapstudent.ac.in</p>
+            <p>University: VIT-AP</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="team-block">
+          <div class="team-image">
+            <img src="static/img.png" class="img-responsive rounded-circle" alt="Gautam">
+          </div>
+          <div class="team-content">
+            <h4>GAUTAM</h4>
+            <p>g-mail: Gautham.t2022@vitstudent.ac.in</p>
+            <p>University: VIT-Vellore</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="team-block">
+          <div class="team-image">
+            <img src="static/img.png" class="img-responsive rounded-circle" alt="Sri Ram">
+          </div>
+          <div class="team-content">
+            <h4>SRI RAM</h4>
+            <p>g-mail : ram.22bce7562@vitapstudent.ac.in</p>
+            <p>University: VIT-AP</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="team-block">
+          <div class="team-image">
+            <img src="static/img.png" class="img-responsive rounded-circle" alt="T.S. Aditya">
+          </div>
+          <div class="team-content">
+            <h4>T.S. ADITYA</h4>
+            <p>g-mail: aditya.22bce7451@vitapstudent.ac.in</p>
+            <p>University: VIT-AP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="padd-section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Contact</h2>
+          <p class="separator">please contact us if you have any issue</p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>VIT AP<br>VIT AP,VIJAYWADA,ANDHRA PRADESH</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <p>kowshik.22bce9556@vitapstudent.ac.in</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>9014091949</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  </div>
+
+<div class="iframe-container" style="width: 230px; height: 460px; display: none; justify-content: center; align-items: center;">
+    <iframe id="techpart-form-iframe" src="path/to/your/iframe/content.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    function showTechPartDetail() {
+        var form = $('#upload-form')[0]; // Get the form element
+        var formData = new FormData(form); // Create a FormData object
+        alert("hi")
+        $.ajax({
+            url: '/render',
+            type: 'POST',
+            data: formData,
+            processData: false, // Important for file uploads
+            contentType: false, // Important for file uploads
+
+            success: function(response) {
+                if (response.success) {
+                    var iframeContainer = document.querySelector('.iframe-container');
+                    var iframe = document.getElementById('techpart-form-iframe');
+                    iframe.src = "/prediction_page";
+                    iframeContainer.style.display = 'block';
+                    document.getElementById('upload-form').reset(); // Reset the form
+                } else {
+                    alert('There was an error processing the form: ' + response.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                alert('An error occurred while processing the form: ' + xhr.responseText);
+            }
+        });
+    }
+</script>
+  </div>
+</body>
+
+</html>
