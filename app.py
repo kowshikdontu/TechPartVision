@@ -4,12 +4,14 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from flask import Flask, request, render_template, url_for
 from werkzeug.utils import secure_filename
+from tensorflow.keras.models import load_model
+
 
 app = Flask(__name__)
 
 global curr
 curr = {"description": "upload a image and click predict", "prediction_text": "None", "file": None}
-model = tf.saved_model.load('pc_parts.h5')
+model = load_model('model.h5')
 
 
 def predict_image(img_path, model):
